@@ -1,4 +1,4 @@
-# Datadog SRE Assistant - stable1.py
+# Datadog SRE Assistant - sre.py
 
 A conversational AI assistant that provides natural language interface to Datadog monitoring tools using Ollama and MCP (Model Context Protocol).
 
@@ -13,7 +13,7 @@ The following diagram shows how user queries are processed through the system:
 ```mermaid
 sequenceDiagram
     participant User
-    participant stable1 as stable1.py
+    participant stable1 as sre.py
     participant Ollama as Ollama LLM
     participant MCP as MCP Server
     participant DD as Datadog API
@@ -33,7 +33,7 @@ sequenceDiagram
 
 ## 🧩 Core Components
 
-### 1. **stable1.py - Main Orchestrator**
+### 1. **sre.py - Main Orchestrator**
 - **Purpose**: Central coordination hub that manages the conversation flow
 - **Key Functions**:
   - Natural language processing via Ollama integration
@@ -132,7 +132,7 @@ The assistant uses a comprehensive system prompt that:
 
 ### Internal Workflow Diagram
 
-The following flowchart shows the detailed internal processing flow of stable1.py:
+The following flowchart shows the detailed internal processing flow of sre.py:
 
 ```mermaid
 flowchart TD
@@ -285,7 +285,7 @@ To test the assistant:
 1. Ensure all prerequisites are installed
 2. Set up environment variables
 3. Build the MCP server
-4. Run: `python stable1.py`
+4. Run: `python sre.py`
 5. Try example queries listed above
 
 ## 📈 Future Enhancements
